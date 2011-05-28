@@ -1,0 +1,17 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  Nick Silvestro / The Silvervest Group
+  Site: http://www.silvervest.net/
+  Twitter: silvervest 
+
+/* THANKS */
+  Names (& URL): Jared, Ben and Pete from #kippage for the ideas/code/testing/owning my dev box
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Modernizr, jQuery, ACE Cloud9 Editor
+  Software: Lighttpd 1.4.28, PHP 5.3.4
+  

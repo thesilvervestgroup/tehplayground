@@ -79,8 +79,8 @@ function init_editor() {
 			var pre = ($('#pre:checked').val() != undefined) + 0; // hate doing this
 			var code = editor.getSession().getValue(); // pull the code from the editor
 			id = genid(); // generate a new ID for each render, paste-bin style
+			window.location.hash = '#' + id;
 			$.post('render.php', {id: id, pre: pre, code: code}, function (data) {
-				window.location.hash = '#' + id;
 				$('#output-content').html(data);
 				amrendering(false);
 			});
@@ -104,6 +104,5 @@ function genid() {
     var text = '';
     var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     for (var i = 0; i < 9; i++) text += chars.charAt(Math.floor(Math.random() * chars.length));
-	console.log('generated new id: ' + text);	
     return text;
 }

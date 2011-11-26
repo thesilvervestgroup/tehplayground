@@ -1,6 +1,7 @@
 var loading = true;
 var last_hash = null;
 var editor;
+var id;
 
 $(function(){
 	amloading(false);
@@ -77,6 +78,7 @@ function init_editor() {
 			amrendering(true);
 			var pre = ($('#pre:checked').val() != undefined) + 0; // hate doing this
 			var code = editor.getSession().getValue(); // pull the code from the editor
+			id = genid(); // generate a new ID for each render, paste-bin style
 			$.post('render.php', {id: id, pre: pre, code: code}, function (data) {
 				window.location.hash = '#' + id;
 				$('#output-content').html(data);
@@ -95,4 +97,13 @@ function amloading(val) {
 // shows 'rendering...' when rendering code
 function amrendering(val) {
 	if (val) { $('#rendering').show(); } else { $('#rendering').hide(); }
+}
+
+// generate a new ID
+function genid() {
+    var text = '';
+    var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    for (var i = 0; i < 9; i++) text += chars.charAt(Math.floor(Math.random() * chars.length));
+	console.log('generated new id: ' + text);	
+    return text;
 }

@@ -83,6 +83,5 @@ The source for this site is open source and released under a GPL license. You ca
 	<script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.5.1.min.js"%3E%3C/script%3E'))</script>
 	<script src="js/plugins.js" charset="utf-8"></script>
 	<script src="js/script.js"></script>
-	<script>var id = '<?php echo uniqid(); ?>';</script>
 
 </html>

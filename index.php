@@ -2,7 +2,12 @@
 $example = "// example code\n\nfor (\$i = 0; \$i < 10; ++\$i) {\n\tprint \"i: \$i\\n\";\n}";
 ?>
 <!doctype html>
-<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]--><!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]--><!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]--><!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]--><!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]--><head>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	
@@ -17,7 +22,8 @@ $example = "// example code\n\nfor (\$i = 0; \$i < 10; ++\$i) {\n\tprint \"i: \$
 
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]--></head>
+	<![endif]-->
+</head>
 <body>
 	<header>
 		<h1><a href="/">Welcome to Teh Playground!</a></h1>
@@ -60,7 +66,7 @@ It does need Javascript enabled to run, since it does AJAX stuff, and does not f
 <h2>Haxors</h2>
 The only thing we ask is that you try not to break it.
 This is provided free of charge to the public, and attacks or misuse will only get it shut down, and that's never a good thing.
-We have locked some things down for security reasons, and the entire web server runs as an unprivileged user in an almost empty chroot jail, so even if you're looking around, there's not much you can get access to. Either way, we understand that people are that way inclined and hope that if you do choose to dig deep and you do find some things open that probably shouldn't be for a public service, feel free to <a href="mailto:bugs@tehplayground.com?subjet=Danger+Will+Robinson,+Danger!">shoot us an email</a> and we'll fix it up and thank you gratiously!
+We have locked some things down for security reasons, and the entire web server runs as an unprivileged user in an almost empty chroot jail, so even if you're looking around, there's not much you can get access to. Either way, we understand that people are that way inclined and hope that if you do choose to dig deep and you do find some things open that probably shouldn't be for a public service, feel free to <a href="mailto:bugs@tehplayground.com?subject=Danger+Will+Robinson,+Danger!">shoot us an email</a> and we'll fix it up and thank you gratiously!
 
 <h2>Open Sores</h2>
 The source for this site is open source and released under a GPL license. You can <a href="https://github.com/thesilvervestgroup/tehplayground/">browse the repository over at GitHub</a>. If you have any improvements to make or find some bugs, you can either <a href="mailto:bugs@tehplayground.com">email us</a> or just fork the repo and send us a pull request!
